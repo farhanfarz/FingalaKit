@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFE9D2581D66AD3C001F12BC /* FingalaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE9D2571D66AD3C001F12BC /* FingalaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFE9D25F1D66AD3C001F12BC /* FingalaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE9D2541D66AD3C001F12BC /* FingalaKit.framework */; };
+		DFE9D2641D66AD3C001F12BC /* FingalaKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9D2631D66AD3C001F12BC /* FingalaKitTests.m */; };
+		DFE9D2751D66B754001F12BC /* NSObject+NSObject_FAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE9D2731D66B754001F12BC /* NSObject+NSObject_FAExtensions.h */; };
+		DFE9D2761D66B754001F12BC /* NSObject+NSObject_FAExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9D2741D66B754001F12BC /* NSObject+NSObject_FAExtensions.m */; };
+		DFE9D27A1D66B864001F12BC /* FAPageViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE9D2781D66B864001F12BC /* FAPageViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFE9D27B1D66B864001F12BC /* FAPageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9D2791D66B864001F12BC /* FAPageViewManager.m */; };
+		DFE9D27D1D66B8E7001F12BC /* FAPageViewManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9D27C1D66B8E7001F12BC /* FAPageViewManagerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFE9D2601D66AD3C001F12BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE9D24B1D66AD3C001F12BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE9D2531D66AD3C001F12BC;
+			remoteInfo = FingalaKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFE9D2541D66AD3C001F12BC /* FingalaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FingalaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE9D2571D66AD3C001F12BC /* FingalaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FingalaKit.h; sourceTree = "<group>"; };
+		DFE9D2591D66AD3C001F12BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE9D25E1D66AD3C001F12BC /* FingalaKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FingalaKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE9D2631D66AD3C001F12BC /* FingalaKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FingalaKitTests.m; sourceTree = "<group>"; };
+		DFE9D2651D66AD3C001F12BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE9D2731D66B754001F12BC /* NSObject+NSObject_FAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSObject_FAExtensions.h"; sourceTree = "<group>"; };
+		DFE9D2741D66B754001F12BC /* NSObject+NSObject_FAExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSObject_FAExtensions.m"; sourceTree = "<group>"; };
+		DFE9D2781D66B864001F12BC /* FAPageViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAPageViewManager.h; sourceTree = "<group>"; };
+		DFE9D2791D66B864001F12BC /* FAPageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAPageViewManager.m; sourceTree = "<group>"; };
+		DFE9D27C1D66B8E7001F12BC /* FAPageViewManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAPageViewManagerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFE9D2501D66AD3C001F12BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9D25B1D66AD3C001F12BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9D25F1D66AD3C001F12BC /* FingalaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFE9D24A1D66AD3C001F12BC = {
+			isa = PBXGroup;
+			children = (
+				DFE9D2561D66AD3C001F12BC /* FingalaKit */,
+				DFE9D2621D66AD3C001F12BC /* FingalaKitTests */,
+				DFE9D2551D66AD3C001F12BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE9D2551D66AD3C001F12BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9D2541D66AD3C001F12BC /* FingalaKit.framework */,
+				DFE9D25E1D66AD3C001F12BC /* FingalaKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFE9D2561D66AD3C001F12BC /* FingalaKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9D2771D66B864001F12BC /* Classes */,
+				DFE9D2721D66B73A001F12BC /* Categories */,
+				DFE9D2571D66AD3C001F12BC /* FingalaKit.h */,
+				DFE9D2591D66AD3C001F12BC /* Info.plist */,
+			);
+			path = FingalaKit;
+			sourceTree = "<group>";
+		};
+		DFE9D2621D66AD3C001F12BC /* FingalaKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9D2631D66AD3C001F12BC /* FingalaKitTests.m */,
+				DFE9D27C1D66B8E7001F12BC /* FAPageViewManagerTests.m */,
+				DFE9D2651D66AD3C001F12BC /* Info.plist */,
+			);
+			path = FingalaKitTests;
+			sourceTree = "<group>";
+		};
+		DFE9D2721D66B73A001F12BC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9D2731D66B754001F12BC /* NSObject+NSObject_FAExtensions.h */,
+				DFE9D2741D66B754001F12BC /* NSObject+NSObject_FAExtensions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DFE9D2771D66B864001F12BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9D2781D66B864001F12BC /* FAPageViewManager.h */,
+				DFE9D2791D66B864001F12BC /* FAPageViewManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFE9D2511D66AD3C001F12BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9D2581D66AD3C001F12BC /* FingalaKit.h in Headers */,
+				DFE9D27A1D66B864001F12BC /* FAPageViewManager.h in Headers */,
+				DFE9D2751D66B754001F12BC /* NSObject+NSObject_FAExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFE9D2531D66AD3C001F12BC /* FingalaKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE9D2681D66AD3C001F12BC /* Build configuration list for PBXNativeTarget "FingalaKit" */;
+			buildPhases = (
+				DFE9D24F1D66AD3C001F12BC /* Sources */,
+				DFE9D2501D66AD3C001F12BC /* Frameworks */,
+				DFE9D2511D66AD3C001F12BC /* Headers */,
+				DFE9D2521D66AD3C001F12BC /* Resources */,
+				DFE9D27E1D66BE3B001F12BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FingalaKit;
+			productName = FingalaKit;
+			productReference = DFE9D2541D66AD3C001F12BC /* FingalaKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFE9D25D1D66AD3C001F12BC /* FingalaKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE9D26B1D66AD3C001F12BC /* Build configuration list for PBXNativeTarget "FingalaKitTests" */;
+			buildPhases = (
+				DFE9D25A1D66AD3C001F12BC /* Sources */,
+				DFE9D25B1D66AD3C001F12BC /* Frameworks */,
+				DFE9D25C1D66AD3C001F12BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE9D2611D66AD3C001F12BC /* PBXTargetDependency */,
+			);
+			name = FingalaKitTests;
+			productName = FingalaKitTests;
+			productReference = DFE9D25E1D66AD3C001F12BC /* FingalaKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFE9D24B1D66AD3C001F12BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = fingala;
+				TargetAttributes = {
+					DFE9D2531D66AD3C001F12BC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DFE9D25D1D66AD3C001F12BC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DFE9D24E1D66AD3C001F12BC /* Build configuration list for PBXProject "FingalaKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFE9D24A1D66AD3C001F12BC;
+			productRefGroup = DFE9D2551D66AD3C001F12BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFE9D2531D66AD3C001F12BC /* FingalaKit */,
+				DFE9D25D1D66AD3C001F12BC /* FingalaKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFE9D2521D66AD3C001F12BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9D25C1D66AD3C001F12BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFE9D27E1D66BE3B001F12BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# workaround for bitcode generation problem with Xcode 7.3\nunset TOOLCHAINS\n\nset -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\n\n# Constants\nSF_TARGET_NAME=${PROJECT_NAME}\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Take build target\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\necho \"Please choose iPhone simulator as the build target.\"\nexit 1\nfi\n\nIPHONE_DEVICE_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\n# Build the other (non-simulator) platform\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/arm64\" SYMROOT=\"${SYMROOT}\" ARCHS='arm64' VALID_ARCHS='arm64' $ACTION\n\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\"  CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/armv7\" SYMROOT=\"${SYMROOT}\" ARCHS='armv7 armv7s' VALID_ARCHS='armv7 armv7s' $ACTION\n\n# Copy the framework structure to the universal folder (clean it first)\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\"\n\n# Smash them together to combine all architectures\nlipo -create  \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/arm64/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/armv7/${PROJECT_NAME}.framework/${PROJECT_NAME}\" -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFE9D24F1D66AD3C001F12BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9D27B1D66B864001F12BC /* FAPageViewManager.m in Sources */,
+				DFE9D2761D66B754001F12BC /* NSObject+NSObject_FAExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9D25A1D66AD3C001F12BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE9D27D1D66B8E7001F12BC /* FAPageViewManagerTests.m in Sources */,
+				DFE9D2641D66AD3C001F12BC /* FingalaKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFE9D2611D66AD3C001F12BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE9D2531D66AD3C001F12BC /* FingalaKit */;
+			targetProxy = DFE9D2601D66AD3C001F12BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFE9D2661D66AD3C001F12BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFE9D2671D66AD3C001F12BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFE9D2691D66AD3C001F12BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FingalaKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fingala.FingalaKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DFE9D26A1D66AD3C001F12BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FingalaKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fingala.FingalaKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DFE9D26C1D66AD3C001F12BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FingalaKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fingala.FingalaKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFE9D26D1D66AD3C001F12BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FingalaKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fingala.FingalaKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFE9D24E1D66AD3C001F12BC /* Build configuration list for PBXProject "FingalaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9D2661D66AD3C001F12BC /* Debug */,
+				DFE9D2671D66AD3C001F12BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE9D2681D66AD3C001F12BC /* Build configuration list for PBXNativeTarget "FingalaKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9D2691D66AD3C001F12BC /* Debug */,
+				DFE9D26A1D66AD3C001F12BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE9D26B1D66AD3C001F12BC /* Build configuration list for PBXNativeTarget "FingalaKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE9D26C1D66AD3C001F12BC /* Debug */,
+				DFE9D26D1D66AD3C001F12BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFE9D24B1D66AD3C001F12BC /* Project object */;
+}
