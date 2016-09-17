@@ -21,6 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIPageViewController *)pageViewControllerForFAPageViewManager;
 
 @end
+
+@protocol FAPageViewManagerDelegate <NSObject>
+
+- (void)pageViewManagerDidMoveToPage:(NSUInteger)index;
+
+@end
 /** The object of this class will serve as the page view datasource and delegate
  *  if initialized using the constructor 'initWithPageData:'.
  *  The content view controller can be configured to be fetched from a storyboard by providing the storyboardInfo.
@@ -33,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FAPageViewManager : NSObject <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (nonatomic, assign) id <FAPageViewManagerDataSource> datasource;
+@property (nonatomic, assign) id <FAPageViewManagerDelegate> delegate;
 
 @property (nonatomic, assign, readonly) NSInteger currentPageIndex; /**< An integer value that keeps track of the current index of the page that is now presented. Defaults to 0. */
 
@@ -57,6 +64,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)moveToPreviousPage;
 
 - (void)moveToNextPage;
+
+- (void)moveToPage:(NSInteger)index;
 
 @end
 

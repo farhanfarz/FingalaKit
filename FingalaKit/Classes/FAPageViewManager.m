@@ -38,7 +38,7 @@ NSString *const kFAPageViewManagerContentViewStoryBoardIdentifier = @"storyboard
                 [[[self datasource] pageViewControllerForFAPageViewManager] setDelegate:self];
             }
             
-            [self showViewControllerAtIndex:_currentPageIndex];
+            [self showViewControllerAtIndex:_currentPageIndex direction:UIPageViewControllerNavigationDirectionForward];
         }
         
     }
@@ -109,6 +109,10 @@ NSString *const kFAPageViewManagerContentViewStoryBoardIdentifier = @"storyboard
         return;
     }
     _currentPageIndex = [[[pageViewController.viewControllers lastObject] valueForKey:kFAPageViewManagerPageIndex] unsignedIntegerValue];
+    
+    if ([self.delegate respondsToSelector:@selector(pageViewManagerDidMoveToPage:)]) {
+        [self.delegate pageViewManagerDidMoveToPage:_currentPageIndex];
+    }
 }
 
 #pragma mark - Page View Controller Helper Methods
@@ -142,7 +146,20 @@ NSString *const kFAPageViewManagerContentViewStoryBoardIdentifier = @"storyboard
             NSAssert(_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier] == nil, @"You need to provide storyboard identifier of the content view controller inside the key kFAPageViewManagerContentViewStoryBoardIdentifier");
         }
         
-        contentViewController = [[UIStoryboard storyboardWithName:_storyboardInfo[kFAPageViewManagerContentViewStoryBoardName] bundle:nil] instantiateViewControllerWithIdentifier:_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier]];
+        if ([_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier] isKindOfClass:[NSString class]]) {
+            
+            contentViewController = [[UIStoryboard storyboardWithName:_storyboardInfo[kFAPageViewManagerContentViewStoryBoardName] bundle:nil] instantiateViewControllerWithIdentifier:_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier]];
+        }else {
+
+            if ([_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier] count] <= index) {
+                
+                NSAssert([_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier] count] <= index, @"You need to provide storyboard identifiers of all the content view controllers inside the key kFAPageViewManagerContentViewStoryBoardIdentifier");
+
+            }
+            
+            contentViewController = [[UIStoryboard storyboardWithName:_storyboardInfo[kFAPageViewManagerContentViewStoryBoardName] bundle:nil] instantiateViewControllerWithIdentifier:_storyboardInfo[kFAPageViewManagerContentViewStoryBoardIdentifier][index]];
+        }
+        
     }
     
     if (![[contentViewController allPropertyNames] containsObject:kFAPageViewManagerPageIndex]) {
@@ -169,10 +186,10 @@ NSString *const kFAPageViewManagerContentViewStoryBoardIdentifier = @"storyboard
     return contentViewController;
 }
 
-- (void)showViewControllerAtIndex:(NSInteger)pageIndex {
+- (void)showViewControllerAtIndex:(NSInteger)pageIndex direction:(UIPageViewControllerNavigationDirection)direction {
     
     if ([[self datasource] respondsToSelector:@selector(pageViewControllerForFAPageViewManager)]) {
-        [[[self datasource] pageViewControllerForFAPageViewManager] setViewControllers:@[[self viewControllerAtIndex:pageIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+        [[[self datasource] pageViewControllerForFAPageViewManager] setViewControllers:@[[self viewControllerAtIndex:pageIndex]] direction:direction animated:YES completion:nil];
     }
     
 }
@@ -190,7 +207,7 @@ NSString *const kFAPageViewManagerContentViewStoryBoardIdentifier = @"storyboard
     }
     
     if (previousPageIndex != _currentPageIndex) {
-        [self showViewControllerAtIndex:previousPageIndex];
+        [self showViewControllerAtIndex:previousPageIndex direction:UIPageViewControllerNavigationDirectionReverse];
     }
     
 }
@@ -207,8 +224,17 @@ NSString *const kFAPageViewManagerContentViewStoryBoardIdentifier = @"storyboard
         }
     }
     if (nextPageIndex != _currentPageIndex) {
-        [self showViewControllerAtIndex:nextPageIndex];
+        [self showViewControllerAtIndex:nextPageIndex direction:UIPageViewControllerNavigationDirectionForward];
     }
+}
+
+- (void)moveToPage:(NSInteger)index {
+    if (index>_currentPageIndex) {
+        [self showViewControllerAtIndex:index direction:UIPageViewControllerNavigationDirectionForward];
+    }else {
+        [self showViewControllerAtIndex:index direction:UIPageViewControllerNavigationDirectionReverse];
+    }
+    
 }
 
 @end
